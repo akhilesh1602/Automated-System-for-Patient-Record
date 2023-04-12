@@ -2,7 +2,48 @@
 
 {% block content %}
 
-    <section>
+<br>
+<div class="container">
+  <div class="text-center">
+    <h1>User Registration</h1>
+  </div>
+</div> <br><br><br>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top"
+        alt="Hollywood Sign on The Hill" />
+      <div class="card-body text-center">
+        
+        <a type="button" class="btn btn-block" href="{% url 'patient_register' %}"><h3 class="card-title">Register as Patient</h3></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+        alt="Palm Springs Road" />
+      <div class="card-body text-center">
+        
+        <a type="button" class="btn btn-block" href="{% url 'doctor_register' %}"><h3 class="card-title">Register as Doctor</h3></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+        alt="Los Angeles Skyscrapers" />
+      <div class="card-body text-center">
+        
+        <a type="button" class="btn btn-block " href="{% url 'staff_register' %}"><h3 class="card-title">Register as Staff</h3></a>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+ <!--   <section>
         <div class="container">
           <div class="row">
             <div class="col-md-6 mx-auto">
@@ -28,6 +69,6 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
   
 {% endblock %}
